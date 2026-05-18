@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Aryan Verma logo</title>
+  <desc id="desc">Stylized AV monogram above Aryan Verma wordmark.</desc>
+  <defs>
+    <radialGradient id="silverGlow" cx="36%" cy="55%" r="38%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.78"/>
+      <stop offset="0.44" stop-color="#f6f2df" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="61%" cy="45%" r="32%">
+      <stop offset="0" stop-color="#f5d165" stop-opacity="0.72"/>
+      <stop offset="0.5" stop-color="#d5a942" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#d5a942" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silverMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.52" stop-color="#d9d9cf"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="goldMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3a7"/>
+      <stop offset="0.5" stop-color="#c39437"/>
+      <stop offset="1" stop-color="#ffe37e"/>
+    </linearGradient>
+    <filter id="logoGlow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.45" result="white"/>
+      <feComposite in="white" in2="blur" operator="in" result="whiteGlow"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="wideBlur"/>
+      <feFlood flood-color="#d4a63d" flood-opacity="0.36" result="gold"/>
+      <feComposite in="gold" in2="wideBlur" operator="in" result="goldGlowShape"/>
+      <feMerge>
+        <feMergeNode in="goldGlowShape"/>
+        <feMergeNode in="whiteGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="#000"/>
+  <rect width="1024" height="1024" fill="url(#silverGlow)"/>
+  <rect width="1024" height="1024" fill="url(#goldGlow)"/>
+  <g transform="translate(112 132)" filter="url(#logoGlow)">
+    <g transform="translate(230 46) scale(0.92)">
+      <path
+        d="M38 238 C58 234 67 223 78 190 L148 0 L224 196 L184 196 L129 58 L82 190 C72 219 65 234 101 238 L101 244 L38 244 Z"
+        fill="url(#silverMetal)"
+        stroke="#f8f8ef"
+        stroke-width="1.6"
+      />
+      <path d="M145 0 L224 196 L184 196 L129 58 Z" fill="url(#silverMetal)" stroke="#f8f8ef" stroke-width="1.6"/>
+      <path
+        d="M170 204 C198 204 217 218 231 247 L270 326 L357 80 C365 55 361 43 326 40 L326 34 L394 34 L394 40 C371 44 359 59 348 88 L248 372 L177 222 C169 209 159 204 145 204 Z"
+        fill="url(#goldMetal)"
+        stroke="#f5d768"
+        stroke-width="1.4"
+      />
+      <path d="M234 247 L270 326 L357 80 C365 55 361 43 326 40 L326 34 L394 34 L394 40 C371 44 359 59 348 88 L248 372 Z" fill="url(#goldMetal)" stroke="#f5d768" stroke-width="1.4"/>
+    </g>
+    <g fill="url(#silverMetal)" stroke="#f7f7ef" stroke-width="1" font-family="Georgia, 'Times New Roman', serif" font-weight="500">
+      <text x="400" y="414" text-anchor="middle" font-size="72" letter-spacing="38">ARYAN</text>
+    </g>
+    <g fill="url(#goldMetal)" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+      <line x1="152" y1="486" x2="232" y2="486" stroke="url(#goldMetal)" stroke-width="4"/>
+      <text x="400" y="502" text-anchor="middle" font-size="42" letter-spacing="18">VERMA</text>
+      <line x1="568" y1="486" x2="648" y2="486" stroke="url(#goldMetal)" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

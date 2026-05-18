@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aryan Verma portfolio - Java, Spring Boot, MERN stack, real-time apps, and full-stack development."
+    />
+    <title>Aryan Verma | Full-Stack Developer</title>
+    <script>
+      (() => {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        let savedTheme = null;
+
+        try {
+          savedTheme = localStorage.getItem("theme");
+        } catch (error) {
+          savedTheme = null;
+        }
+
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Aryan Verma home">
+          <span class="brand-logo-wrap">
+            <img class="brand-logo" src="assets/aryan-verma-logo.svg" alt="" aria-hidden="true" />
+          </span>
+          <span class="brand-copy">
+            <strong>Aryan Verma</strong>
+            <small>Software Developer</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-actions">
+          <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#stack">Stack</a>
+            <a href="#journey">Journey</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/hero-workspace.png" alt="" />
+        </div>
+
+        <div class="hero-content">
+          <div class="availability">
+            <span></span>
+            Open to entry-level software roles
+          </div>
+
+          <p class="eyebrow">Noida, India / Java / Spring Boot / MERN</p>
+          <h1 id="hero-title">I design full-stack systems that feel calm, fast, and useful.</h1>
+          <p class="hero-copy">
+            MCA final-year student building real-time collaboration tools, booking platforms,
+            and Java systems with clean architecture, practical UX, and recruiter-ready execution.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn primary" href="#work">Explore Work</a>
+            <a class="btn dark" href="assets/Aryan_Verma_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a class="btn quiet" href="mailto:aryanve2207@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <aside class="signal-panel" aria-label="Aryan Verma profile snapshot">
+          <div class="panel-header">
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+          </div>
+          <div class="signal-main">
+            <p class="code-line"><span>String</span> developer = "Aryan Verma";</p>
+            <p class="code-line"><span>String[]</span> focus = {"Spring Boot", "MERN", "Realtime"};</p>
+            <p class="code-line"><span>String</span> status = "Entry-Level Software Developer";</p>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>8.27</dt>
+              <dd>MCA CGPA</dd>
+            </div>
+            <div>
+              <dt>3</dt>
+              <dd>Flagship builds</dd>
+            </div>
+            <div>
+              <dt>2026</dt>
+              <dd>MCA completion</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="marquee" aria-label="Core technologies">
+        <div>
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>MySQL</span>
+          <span>Docker</span>
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>MySQL</span>
+          <span>Docker</span>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="Profile summary">
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h2>Built for teams that care about product quality and engineering clarity.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            I work across interface, backend, and data layers. My strongest work combines
+            real-time interaction, reliable APIs, thoughtful data modeling, and interfaces that
+            keep the user's path obvious.
+          </p>
+          <div class="proof-strip" aria-label="Core strengths">
+            <span>REST APIs</span>
+            <span>OOP Design</span>
+            <span>DSA Practice</span>
+            <span>Cloud Concepts</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section signature" aria-labelledby="signature-title">
+        <div class="section-head">
+          <p class="eyebrow">Developer OS</p>
+          <h2 id="signature-title">My work style is simple: understand deeply, build clearly, improve continuously.</h2>
+        </div>
+
+        <div class="signature-grid">
+          <article class="signature-console" aria-label="Aryan Verma developer console">
+            <div class="console-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>aryan.verma</strong>
+            </div>
+            <div class="console-body">
+              <p><span>$</span> solve --with java spring-boot mern</p>
+              <p><span>&gt;</span> design APIs that are predictable, documented, and easy to test</p>
+              <p><span>&gt;</span> build interfaces that make the next action obvious</p>
+              <p><span>&gt;</span> keep learning through DSA, system design basics, and real projects</p>
+            </div>
+          </article>
+
+          <div class="signature-cards" aria-label="Working principles">
+            <article>
+              <span>01</span>
+              <h3>Product Thinking</h3>
+              <p>I connect code decisions to user flow, speed, reliability, and the actual problem being solved.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Backend Clarity</h3>
+              <p>I focus on clean API contracts, sensible data models, and services that are easy to extend.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Team Ready</h3>
+              <p>I write readable code, communicate tradeoffs, and keep improving through feedback and iteration.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-head">
+          <p class="eyebrow">Project lab</p>
+          <h2 id="work-title">Three builds, three different engineering muscles.</h2>
+        </div>
+
+        <div class="project-shell">
+          <div class="project-tabs" role="tablist" aria-label="Projects">
+            <button class="project-tab is-active" type="button" role="tab" aria-selected="true" data-project="codeflow">
+              <span>01</span>
+              CodeFlow
+            </button>
+            <button class="project-tab" type="button" role="tab" aria-selected="false" data-project="wanderlust">
+              <span>02</span>
+              Wanderlust
+            </button>
+            <button class="project-tab" type="button" role="tab" aria-selected="false" data-project="rental">
+              <span>03</span>
+              Car Rental
+            </button>
+          </div>
+
+          <article class="project-stage" aria-live="polite">
+            <div class="project-meta">
+              <span id="project-type">Real-time collaboration</span>
+              <span id="project-stack">React / Node / Socket.IO / Yjs</span>
+            </div>
+            <h3 id="project-name">CodeFlow</h3>
+            <p id="project-description">
+              A collaborative code editor where users join private rooms and code together with live
+              synchronization, compiler output sharing, CodeMirror editing, and Yjs conflict-free state.
+            </p>
+            <div class="project-impact" id="project-impact">
+              <span>Room-based sessions</span>
+              <span>Live editor state</span>
+              <span>Compiler output sharing</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack" id="stack" aria-labelledby="stack-title">
+        <div class="section-head">
+          <p class="eyebrow">Stack map</p>
+          <h2 id="stack-title">A balanced toolkit across app layers.</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article>
+            <span>01</span>
+            <h3>Core Languages</h3>
+            <p>Java, C++, JavaScript</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Client Layer</h3>
+            <p>HTML5, CSS3, Bootstrap, React.js</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Server Layer</h3>
+            <p>Node.js, Express.js, Spring, Spring Boot, REST APIs, Microservices</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Data & Workflow</h3>
+            <p>MySQL, MongoDB, Docker, Git, GitHub, VS Code</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section journey" id="journey" aria-labelledby="journey-title">
+        <div>
+          <p class="eyebrow">Journey</p>
+          <h2 id="journey-title">Education with a software-builder direction.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2024 - 2026</span>
+            <h3>Master of Computer Application</h3>
+            <p>JSS Academy of Technical Education, Noida - AKTU - CGPA 8.27</p>
+          </article>
+          <article>
+            <span>2021 - 2024</span>
+            <h3>Bachelor of Computer Application</h3>
+            <p>Marwar Business School, Gorakhpur - DDUGU - 75.63%</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Ready to contribute from day one.</h2>
+          <p>
+            Seeking an entry-level software development role where I can help ship scalable,
+            efficient, and user-friendly products.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:aryanve2207@gmail.com">aryanve2207@gmail.com</a>
+          <a class="btn dark" href="tel:+918299810883">+91 8299810883</a>
+          <a class="btn quiet" href="https://www.linkedin.com/in/imaryanverma22" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a class="btn quiet" href="https://github.com/arynve22" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Site footer">
+      <div class="footer-main">
+        <p>
+          Java, Spring Boot, and MERN developer building practical systems with clean APIs,
+          real-time features, and thoughtful interfaces.
+        </p>
+      </div>
+
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-contact" aria-label="Footer contact links">
+        <a href="mailto:aryanve2207@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/imaryanverma22" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/arynve22" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#top">Back to top</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aryan Verma. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
