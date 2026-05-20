@@ -3,6 +3,9 @@ const toggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-links a");
 const cursorLight = document.querySelector(".cursor-light");
 const themeToggle = document.querySelector(".theme-toggle");
+const revealTargets = document.querySelectorAll(
+  ".intro, .signature .section-head, .signature-console, .signature-cards article, .work .section-head, .project-tabs, .project-stage, .stack .section-head, .stack-grid article, .journey > div, .timeline article, .contact"
+);
 
 const projects = {
   codeflow: {
@@ -96,3 +99,30 @@ themeToggle?.addEventListener("click", () => {
   }
   setThemeButtonLabel();
 });
+
+if (revealTargets.length) {
+  revealTargets.forEach((target, index) => {
+    target.classList.add("reveal");
+    target.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 90}ms`);
+  });
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+    );
+
+    revealTargets.forEach((target) => revealObserver.observe(target));
+  } else {
+    revealTargets.forEach((target) => target.classList.add("is-visible"));
+  }
+}
